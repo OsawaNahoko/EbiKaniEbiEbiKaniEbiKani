@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class switingimage : MonoBehaviour
+public class switingSprite : MonoBehaviour
 {
-    Image[] KaniEbImagearrey;
-    // Start is called before the first frame update
+    public Sprite[] KaniEbSpritearrey;
+   
     void Start()
     {
         
