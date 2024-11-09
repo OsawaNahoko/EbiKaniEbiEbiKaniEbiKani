@@ -7,15 +7,19 @@ public class ParameterGenerate : MonoBehaviour
     [SerializeField] ParameterData parameterdata;
     int parame;
     
-    void Awake()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        int[] newKaniEbiArrey = new int[4];
-        
-        for (int i = 0; i < newKaniEbiArrey.Length; i++)
+        if(other.gameObject.tag == "switi")
         {
-            newKaniEbiArrey[i] = Random.Range(0, 2); // ０（エビ）か１（カニ）かをランダムに生成
+            int[] newKaniEbiArrey = new int[4];
+        
+            for (int i = 0; i < newKaniEbiArrey.Length; i++)
+            {
+                newKaniEbiArrey[i] = Random.Range(0, 2); // ０（エビ）か１（カニ）かをランダムに生成
+            }
+            parameterdata.KaniEbiArrey = newKaniEbiArrey;
         }
-        parameterdata.KaniEbiArrey = newKaniEbiArrey;
+        
     }
 
 }

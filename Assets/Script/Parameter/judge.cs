@@ -9,7 +9,7 @@ public class judge : MonoBehaviour
     int[] newKaniEbiArrey = new int[4];
     int Number = -1;
 
-      void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
 

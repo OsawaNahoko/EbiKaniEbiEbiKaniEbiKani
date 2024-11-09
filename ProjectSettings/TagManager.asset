@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Limit
-  - EbiKani
   - Ebi
   - Kani
   - dish_Ebi
   - dish_Kani
   - dish_null
+  - switi
   layers:
   - Default
   - TransparentFX

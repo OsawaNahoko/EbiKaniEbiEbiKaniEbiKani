@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(GameOperation(5.0f));
+        StartCoroutine(GameOperation(10.0f));
         mypositon = transform.position;
     }
 
