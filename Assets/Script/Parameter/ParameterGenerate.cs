@@ -18,6 +18,9 @@ public class ParameterGenerate : MonoBehaviour
                 newKaniEbiArrey[i] = Random.Range(0, 2); // ０（エビ）か１（カニ）かをランダムに生成
             }
             parameterdata.KaniEbiArrey = newKaniEbiArrey;
+            
+        
+            Destroy(other.gameObject);
         }
         
     }
