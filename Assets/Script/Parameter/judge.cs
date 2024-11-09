@@ -35,7 +35,7 @@ public class judge : MonoBehaviour
             Debug.Log("正解ですカニ");
             trueCount  += 1;
         }
-        else if (newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Kani" || newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_null")
+        else if (newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Ebi" || newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_null")
         {
             Debug.Log("誤りですカニ！！！！");
             falseCount += 1;
@@ -49,10 +49,10 @@ public class judge : MonoBehaviour
         {
             Number += 1;
         }
-        // else if(Number == 3 )
-        // {
-        //     Number = 0;
-        // }
+        else if(Number == 3 )
+        {
+            Number = 0;
+        }
 
     }
 }
