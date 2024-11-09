@@ -6,7 +6,7 @@ public class GameLimit : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
-             Debug.Log("あたったよ");
+            //  Debug.Log("あたったよ");
              GameObject CollgameObject = collision.gameObject;
              Destroy(CollgameObject);
     }

@@ -13,13 +13,13 @@ public class DropEvent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Enter");
+        // Debug.Log("Enter");
         this.inTrigger = true;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Exit");
+        // Debug.Log("Exit");
         this.inTrigger = false;
     }
 }
