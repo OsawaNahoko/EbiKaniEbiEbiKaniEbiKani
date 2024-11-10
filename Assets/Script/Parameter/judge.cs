@@ -5,6 +5,7 @@ using UnityEngine;
 public class judge : MonoBehaviour
 {
     [SerializeField] ParameterData parameterdata;
+    [SerializeField] ScoreData Scoredata;
 
     int[] newKaniEbiArrey = new int[4];
     int Number = -1;
@@ -13,10 +14,14 @@ public class judge : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.tag == "dish_null" || other.gameObject.tag == "dish_Kani" || other.gameObject.tag == "dish_Ebi")
+        {
+            
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
 
         AddNumber();
-        Debug.Log($"Number{Number}");
+        // Debug.Log($"Number{Number}");
+        Debug.Log($"trueCount{trueCount}");
 
         if(newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_Ebi")
         {
@@ -40,7 +45,12 @@ public class judge : MonoBehaviour
             Debug.Log("誤りですカニ！！！！");
             falseCount += 1;
         }
-
+        }
+               if(trueCount == 4)
+            {
+                Scoredata.Score += 1;
+                Debug.Log($"全問正解！");
+            }
     }
 
     void AddNumber()
@@ -51,8 +61,11 @@ public class judge : MonoBehaviour
         }
         else if(Number == 3 )
         {
-            Number = 0;
+            Number     = 0;
+            falseCount = 0;
+            trueCount  = 0;
+            Debug.Log($"初期化されました");
         }
-
     }
+ 
 }

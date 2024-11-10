@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class switingimage : MonoBehaviour
 {   
+    int[] DishArrey = new int[4];
     public Sprite[] KaniEbSpritearrey;
     SpriteRenderer Spriterend;
-    
-    bool EbiFlag;
-    bool KaniFlag;
 
-    void Start()
+    int EbiKaniCount = 1;
+
+     void Start()
     {
         Spriterend = GetComponent<SpriteRenderer>();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+     void OnTriggerEnter2D(Collider2D other)
     {
 
         if(other.gameObject.tag == "Ebi")
@@ -31,5 +31,31 @@ public class switingimage : MonoBehaviour
             this.gameObject.tag = "dish_Kani";
         }
     }
+
+    public void Switi_Ebi()
+    {
+       Spriterend.sprite = KaniEbSpritearrey[0];
+    }
+
+    public void Switi_Kani()
+    {
+       Spriterend.sprite = KaniEbSpritearrey[1];
+    }
+
+    // void Update()
+    // {
+    //      switch(EbiKaniCount)
+    //     {
+    //         case 0:
+    //         Spriterend.sprite = KaniEbSpritearrey[0];
+    //         break;
+    //         case 1:
+    //         Spriterend.sprite = KaniEbSpritearrey[1];
+    //         break;
+    //         case 3:
+    //         Spriterend.sprite = KaniEbSpritearrey[3];
+    //         break;
+    //     }
+    // }
 
 }

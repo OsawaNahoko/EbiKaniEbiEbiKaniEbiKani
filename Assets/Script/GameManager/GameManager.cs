@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject dishprefab;
+    [SerializeField] GameObject dishprefab;
     Vector3 mypositon;
 
     void Start()
     {
-        StartCoroutine(GameOperation(10.0f));
+        StartCoroutine(GameOperation(15.0f));
         mypositon = transform.position;
     }
 
