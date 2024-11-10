@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
+
 public class DropEvent : MonoBehaviour
 {
     bool inTrigger;
     public UnityEvent dropEvent;
+    string[] targetTags = { "dish_null", "dish_Kani", "dish_Ebi" };
 
-    // Update is called once per frame
     public void Drop()
     {
         if(this.inTrigger)this.dropEvent.Invoke();
@@ -13,13 +15,11 @@ public class DropEvent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Debug.Log("Enter");
-        this.inTrigger = true;
+        if(targetTags.Contains(other.gameObject.tag))this.inTrigger = true;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        // Debug.Log("Exit");
-        this.inTrigger = false;
+        if(targetTags.Contains(other.gameObject.tag))this.inTrigger = true;
     }
 }

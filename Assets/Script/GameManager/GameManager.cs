@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
     {
         if(other.gameObject.tag == "Conveyor")
         {
-            Debug.Log("ぬけよん");
             Instantiate(Conveyorprfab,ConveyorV3,Quaternion.identity);
         }
     }

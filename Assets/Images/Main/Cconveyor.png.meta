@@ -143,6 +143,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cconveyor_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 1754
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5850c7228201bb34bb3269b2bc743af5
+      internalID: -1239576739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -155,6 +176,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Cconveyor_0: -1748031370
+      Cconveyor_1: -1239576739
       Conber_1: -1033063363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
