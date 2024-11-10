@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject dishprefab;
-    [SerializeField] GameObject Conveyorprfab;
-    [SerializeField] Vector3 ConveyorV3;
+    [SerializeField] GameObject  dishprefab;
+    [SerializeField] GameObject  Conveyorprfab;
+    [SerializeField] Vector3     ConveyorV3;
 
-    [SerializeField] ScoreData Scoredata;
+    [SerializeField] ScoreData    Scoredata;
+    [SerializeField] Animator[]   AnimatorArray;
     Vector3 mypositon;
 
     void Start()
     {
         StartCoroutine(GameOperation(15.0f));
         mypositon = transform.position;
+
     }
 
     void Update()
@@ -22,6 +24,11 @@ public class GameManager : MonoBehaviour
         if(Scoredata.Score <= 0)
         {
             Debug.Log("0になったよ");
+        for (int i = 0; i < AnimatorArray.Length; i++)
+        {
+            Debug.Log("処理通ってます");
+            AnimatorArray[i].SetBool("GameOverFlag",true);
+        }
         }
     }
 

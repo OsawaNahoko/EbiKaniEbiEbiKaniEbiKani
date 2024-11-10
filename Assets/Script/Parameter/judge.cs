@@ -15,6 +15,16 @@ public class judge : SoundManger
 
     //サウンド番号：０は正解　１は不正解
 
+    void Update()
+    {
+        if(Scoredata.Score <= 0)
+        {
+            Vector3 newPosition = transform.position;
+            newPosition.y += 10.0f;
+            transform.position = newPosition;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "dish_null" || other.gameObject.tag == "dish_Kani" || other.gameObject.tag == "dish_Ebi")
