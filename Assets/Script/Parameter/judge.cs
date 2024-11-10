@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-public class judge : SoundManger
+public class judge : Soundplayer
 {
     [SerializeField] ParameterData parameterdata;
     [SerializeField] ScoreData Scoredata;

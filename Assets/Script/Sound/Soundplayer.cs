@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManger : MonoBehaviour
+public class Soundplayer : MonoBehaviour
 {
     public AudioClip[] soundArrey;
     AudioSource audioSource;
