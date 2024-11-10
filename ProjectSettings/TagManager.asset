@@ -11,6 +11,7 @@ TagManager:
   - dish_Kani
   - dish_null
   - switi
+  - Conveyor
   layers:
   - Default
   - TransparentFX

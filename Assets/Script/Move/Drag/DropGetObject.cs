@@ -6,9 +6,6 @@ public class DropGetObject : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<switingimage>()) 
-        {
-            other.gameObject.GetComponent<switingimage>().Damage();
-        }
+            GameObject CollgameObject = other.gameObject;
     }
 }

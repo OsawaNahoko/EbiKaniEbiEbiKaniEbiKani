@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GameLimit : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
             //  Debug.Log("あたったよ");
-             GameObject CollgameObject = collision.gameObject;
+             GameObject CollgameObject = other.gameObject;
              Destroy(CollgameObject);
     }
 }
