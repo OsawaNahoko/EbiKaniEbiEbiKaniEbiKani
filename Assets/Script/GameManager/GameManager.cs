@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("0になったよ");
         for (int i = 0; i < AnimatorArray.Length; i++)
         {
-            Debug.Log("処理通ってます");
             AnimatorArray[i].SetBool("GameOverFlag",true);
         }
         }
