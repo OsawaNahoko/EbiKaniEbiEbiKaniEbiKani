@@ -11,11 +11,11 @@ public class ScoreCounter : MonoBehaviour
 
     void Start()
     {
-        Scoredata.Score = 0;
+        Scoredata.Score = 5;
     }
 
     void Update()
     {
-        ScoreText.text = $"{Scorestring = Scoredata.Score.ToString()}";
+        ScoreText.text = $"業務成績:{Scorestring = Scoredata.Score.ToString()}";
     }
 }
