@@ -29,7 +29,7 @@ public class DropGetObject : MonoBehaviour
     {
             if(this.CollgameObject != null)
         {
-            switingimage Switi = CollgameObject.GetComponent<switingimage>();
+            switingDish Switi = CollgameObject.GetComponent<switingDish>();
             
             if (Switi != null)
             {
@@ -40,7 +40,7 @@ public class DropGetObject : MonoBehaviour
             else
             {
                 
-                Debug.LogWarning("Switi is still null - 'switingimage' component not found on " + CollgameObject.name);
+                Debug.LogWarning("Switi is still null - 'switingDish' component not found on " + CollgameObject.name);
             }
             }
             else
@@ -53,7 +53,7 @@ public class DropGetObject : MonoBehaviour
     {
             if(this.CollgameObject != null)
         {
-            switingimage Switi = CollgameObject.GetComponent<switingimage>();
+            switingDish Switi = CollgameObject.GetComponent<switingDish>();
             if (Switi != null)
             {
                 Switi.Switi_Kani();
@@ -62,7 +62,7 @@ public class DropGetObject : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Switi is still null - 'switingimage' component not found on " + CollgameObject.name);
+                Debug.LogWarning("Switi is still null - 'switingDish' component not found on " + CollgameObject.name);
             }
             }
             else

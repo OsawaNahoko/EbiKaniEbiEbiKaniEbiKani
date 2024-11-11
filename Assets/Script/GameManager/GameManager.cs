@@ -21,7 +21,15 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(GameOperation(15.0f));
         dishpositon = transform.position;
+        Invoke("GameUI",5.0f);
 
+    }
+
+    void GameUI()
+    {
+        
+        GameUIArray[0].SetActive(false);
+        GameUIArray[1].SetActive(true);
     }
 
     void Update()
@@ -32,9 +40,6 @@ public class GameManager : MonoBehaviour
             {
                 AnimatorArray[i].SetBool("GameOverFlag",true);
             }
-
-            GameUIArray[0].SetActive(false);
-            GameUIArray[1].SetActive(true);
         }
     }
 

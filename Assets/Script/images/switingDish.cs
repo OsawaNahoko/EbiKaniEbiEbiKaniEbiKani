@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class switingimage : MonoBehaviour
+public class switingDish : Soundplayer
 {   
     int[] DishArrey = new int[4];
     public Sprite[] KaniEbSpritearrey;
@@ -20,28 +18,14 @@ public class switingimage : MonoBehaviour
     {
        Spriterend.sprite = KaniEbSpritearrey[0];
        this.gameObject.tag = "dish_Ebi";
+       PlaySound(0);
     }
 
     public void Switi_Kani()
     {
        Spriterend.sprite = KaniEbSpritearrey[1];
        this.gameObject.tag = "dish_Kani";
+       PlaySound(0);
     }
-
-    //  void OnTriggerEnter2D(Collider2D other)
-    // {
-
-    //     if(other.gameObject.tag == "Ebi")
-    //     {
-    //         Spriterend.sprite = KaniEbSpritearrey[0];
-    //         this.gameObject.tag = "dish_Ebi";
-    //     }
-
-    //     if(other.gameObject.tag == "Kani")
-    //     {
-    //         Spriterend.sprite = KaniEbSpritearrey[1];
-    //         this.gameObject.tag = "dish_Kani";
-    //     }
-    // }
 
 }

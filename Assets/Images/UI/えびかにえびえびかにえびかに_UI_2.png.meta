@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u5DE5\u5834\u9577\u304B\u3089\u306E\u3053\u3068\u3070"
+      name: FactoryLeader
       rect:
         serializedVersion: 2
         x: 559
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BestComemmnt
+      name: BestComment
       rect:
         serializedVersion: 2
         x: 163
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodComennt
+      name: GoodComment
       rect:
         serializedVersion: 2
         x: 99
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NomalComent
+      name: NomalComment
       rect:
         serializedVersion: 2
         x: 138
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NonComent
+      name: batComment
       rect:
         serializedVersion: 2
         x: 139
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BestComemmnt: 1765908821
-      GoodComennt: 676188956
-      NomalComent: 699610612
-      NonComent: 262275510
-      "\u5DE5\u5834\u9577\u304B\u3089\u306E\u3053\u3068\u3070": -1991673544
+      BestComment: 1765908821
+      FactoryLeader: -1991673544
+      GoodComment: 676188956
+      NomalComment: 699610612
+      batComment: 262275510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
