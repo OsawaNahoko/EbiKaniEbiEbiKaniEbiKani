@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class ScoreCounter : MonoBehaviour
 {
     [SerializeField] ScoreData Scoredata;
+    [SerializeField] Text HighScoreText;
     [SerializeField] Text ScoreText;
+
     string Scorestring;
+    string HighScoreString;
 
     void Start()
     {
@@ -16,6 +19,12 @@ public class ScoreCounter : MonoBehaviour
 
     void Update()
     {
-        ScoreText.text = $"業務成績:{Scorestring = Scoredata.Score.ToString()}";
+        ScoreText.text      = $"業務成績:{Scorestring     = Scoredata.Score.ToString()}";
+        HighScoreText.text  = $"最高成績:{HighScoreString = Scoredata.HighScore.ToString()}";
+
+        if(Scoredata.Score > Scoredata.HighScore)
+        {
+            Scoredata.HighScore += 1;
+        }
     }
 }

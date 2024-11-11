@@ -26,7 +26,7 @@ public class judge : Soundplayer
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (targetTags.Contains(other.gameObject.tag))
         {
@@ -39,30 +39,30 @@ public class judge : Soundplayer
 
         if(newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_Ebi")
         {
-            Debug.Log("正解ですエビ");
+            // Debug.Log("正解ですエビ");
             Success();
         }
         else if (newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_Kani" || newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_null")
         {
-            Debug.Log("誤りですエビ！！！");
+            // Debug.Log("誤りですエビ！！！");
             miss();
         }
 
         if(newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Kani")
         {
-            Debug.Log("正解ですカニ");
+            // Debug.Log("正解ですカニ");
             Success();
         }
         else if (newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Ebi" || newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_null")
         {
-            Debug.Log("誤りですカニ！！！！");
+            // Debug.Log("誤りですカニ！！！！");
             miss();
         }
         }
                if(trueCount == 4)
             {
                 Scoredata.Score += 1;
-                Debug.Log("全問正解！");
+                // Debug.Log("全問正解！");
             }
     }
 
@@ -76,7 +76,7 @@ public class judge : Soundplayer
         {
             Number     = 0;
             trueCount  = 0;
-            Debug.Log("初期化されました");
+            // Debug.Log("初期化されました");
         }
     }
 
@@ -90,7 +90,6 @@ public class judge : Soundplayer
     {
             PlaySound(1);
             Scoredata.Score -= 1;
-            Debug.Log("ミスです");
     }
  
 }

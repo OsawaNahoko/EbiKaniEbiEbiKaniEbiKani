@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Soundplayer : MonoBehaviour
@@ -13,7 +11,6 @@ public class Soundplayer : MonoBehaviour
         if(audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
-            Debug.Log("Nullでした");
         }
 
         audioSource.PlayOneShot(soundArrey[Number]);

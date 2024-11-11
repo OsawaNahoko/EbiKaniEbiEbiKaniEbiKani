@@ -16,6 +16,18 @@ public class switingimage : MonoBehaviour
         Spriterend = GetComponent<SpriteRenderer>();
     }
 
+    public void Switi_Ebi()
+    {
+       Spriterend.sprite = KaniEbSpritearrey[0];
+       this.gameObject.tag = "dish_Ebi";
+    }
+
+    public void Switi_Kani()
+    {
+       Spriterend.sprite = KaniEbSpritearrey[1];
+       this.gameObject.tag = "dish_Kani";
+    }
+
     //  void OnTriggerEnter2D(Collider2D other)
     // {
 
@@ -29,34 +41,6 @@ public class switingimage : MonoBehaviour
     //     {
     //         Spriterend.sprite = KaniEbSpritearrey[1];
     //         this.gameObject.tag = "dish_Kani";
-    //     }
-    // }
-
-    public void Switi_Ebi()
-    {
-       Spriterend.sprite = KaniEbSpritearrey[0];
-       this.gameObject.tag = "dish_Ebi";
-    }
-
-    public void Switi_Kani()
-    {
-       Spriterend.sprite = KaniEbSpritearrey[1];
-       this.gameObject.tag = "dish_Kani";
-    }
-
-    // void Update()
-    // {
-    //      switch(EbiKaniCount)
-    //     {
-    //         case 0:
-    //         Spriterend.sprite = KaniEbSpritearrey[0];
-    //         break;
-    //         case 1:
-    //         Spriterend.sprite = KaniEbSpritearrey[1];
-    //         break;
-    //         case 3:
-    //         Spriterend.sprite = KaniEbSpritearrey[3];
-    //         break;
     //     }
     // }
 

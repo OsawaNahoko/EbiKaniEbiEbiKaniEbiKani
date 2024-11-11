@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject  dishprefab;
-    [SerializeField] GameObject  Conveyorprfab;
-    [SerializeField] Vector3     ConveyorV3;
-
-    [SerializeField] ScoreData    Scoredata;
+    [Tooltip("0はDish!1はConveryor!")]
+    [SerializeField] GameObject[]   prfabArray;//０＿Dishprefab　１＿Conveyorprefab
+    [Tooltip("0はGamestart!1はGameOver!")]
+    [SerializeField] GameObject[]   GameUIArray;//０＿Gamestart　１＿GameOver
     [SerializeField] Animator[]   AnimatorArray;
-    Vector3 mypositon;
+    [SerializeField] ScoreData    Scoredata;
+    [SerializeField] Vector3     ConveyorV3;
+    Vector3 dishpositon;
+
+
+    
+
 
     void Start()
     {
         StartCoroutine(GameOperation(15.0f));
-        mypositon = transform.position;
+        dishpositon = transform.position;
 
     }
 
@@ -27,6 +32,9 @@ public class GameManager : MonoBehaviour
             {
                 AnimatorArray[i].SetBool("GameOverFlag",true);
             }
+
+            GameUIArray[0].SetActive(false);
+            GameUIArray[1].SetActive(true);
         }
     }
 
@@ -35,7 +43,7 @@ public class GameManager : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(WaitIETime);
-            Instantiate(dishprefab,mypositon,Quaternion.identity);
+            Instantiate(prfabArray[0],dishpositon,Quaternion.identity);
             yield return null;
             continue;
         }
@@ -45,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if(other.gameObject.tag == "Conveyor")
         {
-            Instantiate(Conveyorprfab,ConveyorV3,Quaternion.identity);
+            Instantiate(prfabArray[1],ConveyorV3,Quaternion.identity);
         }
     }
 
