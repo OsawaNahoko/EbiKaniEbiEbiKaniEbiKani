@@ -23,11 +23,10 @@ public class GameManager : MonoBehaviour
     {
         if(Scoredata.Score <= 0)
         {
-            Debug.Log("0になったよ");
-        for (int i = 0; i < AnimatorArray.Length; i++)
-        {
-            AnimatorArray[i].SetBool("GameOverFlag",true);
-        }
+            for (int i = 0; i < AnimatorArray.Length; i++)
+            {
+                AnimatorArray[i].SetBool("GameOverFlag",true);
+            }
         }
     }
 

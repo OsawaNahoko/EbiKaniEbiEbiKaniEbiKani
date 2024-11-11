@@ -15,11 +15,18 @@ public class DropEvent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(targetTags.Contains(other.gameObject.tag))this.inTrigger = true;
+        if (targetTags.Contains(other.gameObject.tag))
+        {
+            this.inTrigger = true;
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(targetTags.Contains(other.gameObject.tag))this.inTrigger = true;
+        if (targetTags.Contains(other.gameObject.tag))
+        {
+        this.inTrigger = false;
+        }
     }
 }

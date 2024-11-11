@@ -16,30 +16,32 @@ public class switingimage : MonoBehaviour
         Spriterend = GetComponent<SpriteRenderer>();
     }
 
-     void OnTriggerEnter2D(Collider2D other)
-    {
+    //  void OnTriggerEnter2D(Collider2D other)
+    // {
 
-        if(other.gameObject.tag == "Ebi")
-        {
-            Spriterend.sprite = KaniEbSpritearrey[0];
-            this.gameObject.tag = "dish_Ebi";
-        }
+    //     if(other.gameObject.tag == "Ebi")
+    //     {
+    //         Spriterend.sprite = KaniEbSpritearrey[0];
+    //         this.gameObject.tag = "dish_Ebi";
+    //     }
 
-        if(other.gameObject.tag == "Kani")
-        {
-            Spriterend.sprite = KaniEbSpritearrey[1];
-            this.gameObject.tag = "dish_Kani";
-        }
-    }
+    //     if(other.gameObject.tag == "Kani")
+    //     {
+    //         Spriterend.sprite = KaniEbSpritearrey[1];
+    //         this.gameObject.tag = "dish_Kani";
+    //     }
+    // }
 
     public void Switi_Ebi()
     {
        Spriterend.sprite = KaniEbSpritearrey[0];
+       this.gameObject.tag = "dish_Ebi";
     }
 
     public void Switi_Kani()
     {
        Spriterend.sprite = KaniEbSpritearrey[1];
+       this.gameObject.tag = "dish_Kani";
     }
 
     // void Update()

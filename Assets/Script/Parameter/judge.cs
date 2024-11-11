@@ -9,6 +9,7 @@ public class judge : Soundplayer
     [SerializeField] ParameterData parameterdata;
     [SerializeField] ScoreData Scoredata;
 
+    string[] targetTags = { "dish_null", "dish_Kani", "dish_Ebi" };
     int[] newKaniEbiArrey = new int[4];
     int Number = -1;
     int trueCount  = 0;
@@ -27,7 +28,7 @@ public class judge : Soundplayer
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "dish_null" || other.gameObject.tag == "dish_Kani" || other.gameObject.tag == "dish_Ebi")
+        if (targetTags.Contains(other.gameObject.tag))
         {
             
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
