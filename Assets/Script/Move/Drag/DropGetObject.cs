@@ -20,7 +20,7 @@ public class DropGetObject : MonoBehaviour
     {
           if (targetTags.Contains(other.gameObject.tag))
         {
-            Debug.Log($"CollgameObejct = {CollgameObject}");
+            // Debug.Log($"CollgameObejct = {CollgameObject}");
             CollgameObject = other.gameObject;
         }
     }

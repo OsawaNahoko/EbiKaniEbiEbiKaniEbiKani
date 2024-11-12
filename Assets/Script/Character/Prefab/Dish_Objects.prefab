@@ -153,8 +153,8 @@ MonoBehaviour:
   soundArrey:
   - {fileID: 8300000, guid: 28e5e93f945b9d84088966332ca4e0c9, type: 3}
   KaniEbSpritearrey:
-  - {fileID: 899430004, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
-  - {fileID: -1128650986, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
+  - {fileID: -837371050, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
+  - {fileID: 1996935701, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
 --- !u!61 &6130135436336550666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -498,8 +498,8 @@ MonoBehaviour:
   soundArrey:
   - {fileID: 8300000, guid: 28e5e93f945b9d84088966332ca4e0c9, type: 3}
   KaniEbSpritearrey:
-  - {fileID: 899430004, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
-  - {fileID: -1128650986, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
+  - {fileID: -837371050, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
+  - {fileID: 1996935701, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
 --- !u!82 &8124143037409142364
 AudioSource:
   m_ObjectHideFlags: 0
@@ -512,7 +512,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -876,8 +876,8 @@ MonoBehaviour:
   soundArrey:
   - {fileID: 8300000, guid: 28e5e93f945b9d84088966332ca4e0c9, type: 3}
   KaniEbSpritearrey:
-  - {fileID: 899430004, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
-  - {fileID: -1128650986, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
+  - {fileID: -837371050, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
+  - {fileID: 1996935701, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
 --- !u!82 &6149671594318707413
 AudioSource:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1149,8 +1149,8 @@ MonoBehaviour:
   soundArrey:
   - {fileID: 8300000, guid: 28e5e93f945b9d84088966332ca4e0c9, type: 3}
   KaniEbSpritearrey:
-  - {fileID: 899430004, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
-  - {fileID: -1128650986, guid: fda62fd810a96c240959ef5a4c3a41be, type: 3}
+  - {fileID: -837371050, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
+  - {fileID: 1996935701, guid: 511d04aac0c99ca49bb79a44cc4e8a6a, type: 3}
 --- !u!82 &3992592677267731905
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1163,7 +1163,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0

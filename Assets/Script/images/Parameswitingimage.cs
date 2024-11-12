@@ -18,14 +18,33 @@ public class Parameswitingimage : MonoBehaviour
     void Update()
     {
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
-
-        if(newKaniEbiArrey[Number] == 0)
+        
+        switch(newKaniEbiArrey[Number])
         {
+            case 0:
             Spriterend.sprite = KaniEbSpritearrey[0];
-        }
-        else if(newKaniEbiArrey[Number] == 1)
-        {
+            break;
+
+            case 1:
             Spriterend.sprite = KaniEbSpritearrey[1];
+            break;
+
+            case 2:
+            Spriterend.sprite = KaniEbSpritearrey[2];
+            break;
+
+            case 3:
+            Spriterend.sprite = KaniEbSpritearrey[3];
+            break;
         }
+        // if(newKaniEbiArrey[Number] == 0)
+        // {
+        //     Spriterend.sprite = KaniEbSpritearrey[0];
+        // }
+        // else if(newKaniEbiArrey[Number] == 1)
+        // {
+        //     Spriterend.sprite = KaniEbSpritearrey[1];
+        // }
+        // else if()
     }
 }

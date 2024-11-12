@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Tooltip("0はDish!1はConveryor!")]
+    [Tooltip("Element0 is Dish.Element1 is Converyor.")]
     [SerializeField] GameObject[]   prfabArray;//０＿Dishprefab　１＿Conveyorprefab
-    [Tooltip("0はGamestart!1はGameOver!")]
+    [Tooltip("Element0 is Gamestart.Element1 is GameOver.")]
     [SerializeField] GameObject[]   GameUIArray;//０＿Gamestart　１＿GameOver
     [SerializeField] Animator[]   AnimatorArray;
     [SerializeField] ScoreData    Scoredata;

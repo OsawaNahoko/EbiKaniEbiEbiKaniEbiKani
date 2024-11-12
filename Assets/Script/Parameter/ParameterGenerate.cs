@@ -9,7 +9,7 @@ public class ParameterGenerate : MonoBehaviour
     {
         if(other.gameObject.tag == "switi")
         {
-            int[] newKaniEbiArrey = new int[4];
+            int[] newKaniEbiArrey = new int[5];
         
             for (int i = 0; i < newKaniEbiArrey.Length; i++)
             {

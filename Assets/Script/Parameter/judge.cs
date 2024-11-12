@@ -10,7 +10,7 @@ public class judge : Soundplayer
     [SerializeField] ScoreData Scoredata;
 
     string[] targetTags = { "dish_null", "dish_Kani", "dish_Ebi" };
-    int[] newKaniEbiArrey = new int[4];
+    int[] newKaniEbiArrey = new int[5];
     int Number = -1;
     int trueCount  = 0;
 
@@ -34,30 +34,31 @@ public class judge : Soundplayer
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
 
         AddNumber();
-        // Debug.Log($"Number{Number}");
+        Debug.Log($"Number = {Number}");
         // Debug.Log($"trueCount{trueCount}");
 
         if(newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_Ebi")
         {
-            // Debug.Log("正解ですエビ");
+            Debug.Log("正解ですエビ");
             Success();
         }
         else if (newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_Kani" || newKaniEbiArrey[Number] == 0 && other.gameObject.tag == "dish_null")
         {
-            // Debug.Log("誤りですエビ！！！");
+            Debug.Log("誤りですエビ！！！");
             miss();
         }
 
         if(newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Kani")
         {
-            // Debug.Log("正解ですカニ");
+            Debug.Log("正解ですカニ");
             Success();
         }
         else if (newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_Ebi" || newKaniEbiArrey[Number] == 1 && other.gameObject.tag == "dish_null")
         {
-            // Debug.Log("誤りですカニ！！！！");
+            Debug.Log("誤りですカニ！！！！");
             miss();
         }
+
         }
                if(trueCount == 4)
             {
@@ -68,7 +69,7 @@ public class judge : Soundplayer
 
     void AddNumber()
     {
-        if (Number < newKaniEbiArrey.Length - 1)
+        if (Number < newKaniEbiArrey.Length - 2)
         {
             Number += 1;
         }
@@ -84,12 +85,16 @@ public class judge : Soundplayer
     {
             PlaySound(0);
             trueCount  += 1;
+            parameterdata.KaniEbiArrey[Number] = 2;
+            parameterdata.KaniEbiArrey[4] = 2;
     }
 
     void miss()
     {
             PlaySound(1);
             Scoredata.Score -= 1;
+            parameterdata.KaniEbiArrey[Number] = 3;
+            parameterdata.KaniEbiArrey[4] = 3;
     }
  
 }

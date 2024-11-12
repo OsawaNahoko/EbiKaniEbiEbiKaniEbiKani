@@ -4,6 +4,6 @@ using UnityEngine;
 public class ParameterData : ScriptableObject
 {
 
-    public int[] KaniEbiArrey = new int[4];//０がエビ、１がカニ
+    public int[] KaniEbiArrey = new int[5];//０がエビ、１がカニ
 
 }
