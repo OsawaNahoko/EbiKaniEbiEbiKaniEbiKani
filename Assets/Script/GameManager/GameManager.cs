@@ -15,21 +15,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject     parent_Conveyor;
     Vector3 dishpositon;
 
-
-    
-
-
     void Start()
     {
         StartCoroutine(GameOperation(15.0f));
         dishpositon = transform.position;
         Invoke("GameUI",5.0f);
-
     }
 
     void GameUI()
     {
-        
         GameUIArray[0].SetActive(false);
         GameUIArray[1].SetActive(true);
     }
@@ -38,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         if(Scoredata.Score <= 0)
         {
-            Destroy(parent_Conveyor);
+            Destroy(parent_Conveyor,2.0f);
             for (int i = 0; i < AnimatorArray.Length; i++)
             {
                 AnimatorArray[i].SetBool("GameOverFlag",true);

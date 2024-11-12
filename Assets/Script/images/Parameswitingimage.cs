@@ -4,11 +4,11 @@ public class Parameswitingimage : MonoBehaviour
 {
     [SerializeField] ParameterData parameterdata;
 
-    public Sprite[] KaniEbSpritearrey;
+    [SerializeField] Sprite[] KaniEbSpritearrey;
     SpriteRenderer Spriterend;
 
     int[] newKaniEbiArrey = new int[4];
-    public int Number;
+    [SerializeField] int Number;
 
         void Start()
     {
@@ -18,7 +18,7 @@ public class Parameswitingimage : MonoBehaviour
     void Update()
     {
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
-        
+
         switch(newKaniEbiArrey[Number])
         {
             case 0:
@@ -37,14 +37,5 @@ public class Parameswitingimage : MonoBehaviour
             Spriterend.sprite = KaniEbSpritearrey[3];
             break;
         }
-        // if(newKaniEbiArrey[Number] == 0)
-        // {
-        //     Spriterend.sprite = KaniEbSpritearrey[0];
-        // }
-        // else if(newKaniEbiArrey[Number] == 1)
-        // {
-        //     Spriterend.sprite = KaniEbSpritearrey[1];
-        // }
-        // else if()
     }
 }

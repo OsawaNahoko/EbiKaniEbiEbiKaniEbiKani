@@ -17,7 +17,6 @@ public class ParameterGenerate : MonoBehaviour
             }
             parameterdata.KaniEbiArrey = newKaniEbiArrey;
             
-        
             Destroy(other.gameObject);
         }
         
