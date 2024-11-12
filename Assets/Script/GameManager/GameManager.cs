@@ -8,9 +8,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[]   prfabArray;//０＿Dishprefab　１＿Conveyorprefab
     [Tooltip("Element0 is Gamestart.Element1 is GameOver.")]
     [SerializeField] GameObject[]   GameUIArray;//０＿Gamestart　１＿GameOver
-    [SerializeField] Animator[]   AnimatorArray;
-    [SerializeField] ScoreData    Scoredata;
-    [SerializeField] Vector3     ConveyorV3;
+    [SerializeField] Animator[]     AnimatorArray;
+
+    [SerializeField] ScoreData      Scoredata;
+    [SerializeField] Vector3        ConveyorV3;
+    [SerializeField] GameObject     parent_Conveyor;
     Vector3 dishpositon;
 
 
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         if(Scoredata.Score <= 0)
         {
+            Destroy(parent_Conveyor);
             for (int i = 0; i < AnimatorArray.Length; i++)
             {
                 AnimatorArray[i].SetBool("GameOverFlag",true);
@@ -58,7 +61,7 @@ public class GameManager : MonoBehaviour
     {
         if(other.gameObject.tag == "Conveyor")
         {
-            Instantiate(prfabArray[1],ConveyorV3,Quaternion.identity);
+            Instantiate(prfabArray[1],ConveyorV3,Quaternion.identity,parent_Conveyor.transform);
         }
     }
 

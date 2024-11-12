@@ -3,11 +3,10 @@ using UnityEngine.UI;
 
 public class switingDish : Soundplayer
 {   
-    int[] DishArrey = new int[4];
     public Sprite[] KaniEbSpritearrey;
-    SpriteRenderer Spriterend;
+    int[] DishArrey = new int[4];
+    SpriteRenderer  Spriterend;
 
-    int EbiKaniCount = 1;
 
      void Start()
     {
