@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4144c6fe38b124e895532d70a24232, type: 3}
   m_Name: ParameterData
   m_EditorClassIdentifier: 
-  KaniEbiArrey: 00000000010000000000000000000000
+  KaniEbiArrey: 0100000001000000010000000000000001000000

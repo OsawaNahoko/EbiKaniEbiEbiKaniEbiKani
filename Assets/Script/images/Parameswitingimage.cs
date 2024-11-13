@@ -7,7 +7,7 @@ public class Parameswitingimage : MonoBehaviour
     [SerializeField] Sprite[] KaniEbSpritearrey;
     SpriteRenderer Spriterend;
 
-    int[] newKaniEbiArrey = new int[4];
+    int[] newKaniEbiArrey = new int[5];
     [SerializeField] int Number;
 
         void Start()
