@@ -16,19 +16,9 @@ public class judge : Soundplayer
 
     //サウンド番号：０は正解　１は不正解
 
-    void Update()
-    {
-        if(Scoredata.Score <= 0)
-        {
-            Vector3 newPosition = transform.position;
-            newPosition.y += 10.0f;
-            transform.position = newPosition;
-        }
-    }
-
     void OnTriggerExit2D(Collider2D other)
     {
-        if (targetTags.Contains(other.gameObject.tag))
+        if (targetTags.Contains(other.gameObject.tag) && Scoredata.Score >= 0)
         {
             
         newKaniEbiArrey = parameterdata.KaniEbiArrey;
@@ -64,6 +54,12 @@ public class judge : Soundplayer
             {
                 Scoredata.Score += 1;
                 // Debug.Log("全問正解！");
+            }
+                if(Scoredata.Score <= 0)
+            {
+                Vector3 newPosition = transform.position;
+                newPosition.y += 10.0f;
+                transform.position = newPosition;
             }
     }
 

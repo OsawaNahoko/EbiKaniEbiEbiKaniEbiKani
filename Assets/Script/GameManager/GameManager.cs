@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(Scoredata.Score <= 0)
+        if(Scoredata.Score <= 0 || Scoredata.Score >= 100 )
         {
             Destroy(parent_Conveyor,2.0f);
             for (int i = 0; i < AnimatorArray.Length; i++)
