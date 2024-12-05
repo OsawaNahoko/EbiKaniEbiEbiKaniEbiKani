@@ -14,7 +14,8 @@ public class ScoreCounter : MonoBehaviour
 
     void Start()
     {
-        Scoredata.Score = 5;
+        Scoredata.Score     = 5;
+        Scoredata.HighScore = 5;
     }
 
     void Update()

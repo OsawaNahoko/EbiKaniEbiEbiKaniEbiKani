@@ -16,7 +16,7 @@ public class judge : Soundplayer
 
     //サウンド番号：０は正解　１は不正解
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (targetTags.Contains(other.gameObject.tag) && Scoredata.Score >= 0)
         {
