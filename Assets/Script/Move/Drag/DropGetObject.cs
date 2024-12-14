@@ -42,11 +42,11 @@ public class DropGetObject : MonoBehaviour
                 
                 Debug.LogWarning("Switi is still null - 'switingDish' component not found on " + CollgameObject.name);
             }
-            }
-            else
-            {
-                Debug.LogError("CollgameObject is null");
-            }
+        }
+        else
+        {
+            Debug.LogError("CollgameObject is null");
+        }
     } 
 
         public void SwitiKani()
@@ -64,11 +64,11 @@ public class DropGetObject : MonoBehaviour
             {
                 Debug.LogWarning("Switi is still null - 'switingDish' component not found on " + CollgameObject.name);
             }
-            }
-            else
-            {
-                Debug.LogError("CollgameObject is null");
-            }
+        }
+        else
+        {
+            Debug.LogError("CollgameObject is null");
+        }
     } 
 
 }
